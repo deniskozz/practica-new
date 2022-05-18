@@ -57,20 +57,35 @@
     <main>
         <div class="container">
             <h2 class="mt-4 mb-5">Корзина</h2>
-            <div class="list d-flex justify-content-between align-items-center mb-5">
-                <img class="img-fluid cart-list-img" src="img/case2.jpg" alt="">
-                <div class="info d-flex flex-column">
+            <div class="row list d-flex justify-content-between align-items-center mb-0 py-3">
+                <img class="col-4 col-md-3 cart-list-img" src="img/case2.jpg" alt="">
+                <div class="col-8 col-sm-3 info d-flex flex-column">
                     <p class="name">Название чехла</p>
-                    <p class="phone-info">Iphone</p>
-                    <p class="phone-name-info">iPhone4</p>
+                    <small class="phone-info">Iphone</small>
+                    <small class="phone-name-info">iPhone4</small>
                 </div>
-                <div class="quntity-box d-flex justify-content-between align-items-center">
+                <div class="col-6 col-sm-1 quntity-box d-flex justify-content-start align-items-center">
                     <button class="btn minus-btn">-</button>
                     <p class="quantity">1</p>
-                    <button class="btn plus-btn">+</button>
+                    <button class="btn plus-btn me-3">+</button>
                 </div>
-                <p class="price">500 Рублей</p>
-                <button class="btn delete-btn btn-close btn-outline-danger"></button>
+                <p class="col-5 price">500 Рублей</p>
+                <button type="button" class="col-1 btn delete-btn btn-close btn-outline-danger"></button>
+            </div>
+            <div class="row list d-flex justify-content-between align-items-center mb-5 py-3">
+                <img class="col-4 col-md-3 cart-list-img" src="img/case2.jpg" alt="">
+                <div class="col-8 col-sm-3 info d-flex flex-column">
+                    <p class="name">Название чехла</p>
+                    <small class="phone-info">Iphone</small>
+                    <small class="phone-name-info">iPhone4</small>
+                </div>
+                <div class="col-6 col-sm-1 quntity-box d-flex justify-content-start align-items-center">
+                    <button class="btn minus-btn">-</button>
+                    <p class="quantity">1</p>
+                    <button class="btn plus-btn me-3">+</button>
+                </div>
+                <p class="col-5 price">500 Рублей</p>
+                <button type="button" class="col-1 btn delete-btn btn-close btn-outline-danger"></button>
             </div>
 
             <div class="my-3">
@@ -90,7 +105,7 @@
                             <option value="1">Абакан</option>
                             <option value="2">Абаза</option>
                             <option value="3">Астана</option>
-                          </select>
+                        </select>
                         <label for="street" class="form-label">Укажите улицу</label>
                         <input type="text" name="" id="street" class="form-control" placeholder="Пушкина" aria-describedby="helpId">
                         <div class="addres-box row">
