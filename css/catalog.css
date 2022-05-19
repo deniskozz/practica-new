@@ -2,7 +2,8 @@
     font-family: 'Montserrat',serif;
 }
 
-.categories-list {
+.categories-list,
+.collections-list {
     list-style: none;
 }
 
@@ -11,7 +12,7 @@
     font-size: 1em;
 }
 
-.catalog-card .card-title {
+.card-title {
     font-size: 1em;
     margin-top: 10px;
 }
@@ -30,4 +31,21 @@
 .list-name{
     font-size: 1.5em;
     color: #4C57FF;
+}
+
+
+.catalog_card-title{
+    font-size: 1em;
+    padding: 1em 1em 0;
+}
+
+@media (max-width: 767px) {
+    .catalog-card-title {
+        font-size: 0.8em;
+        padding: 0.7em 1em 0;
+    }
+
+    .btn-categories-dropdown{
+        font-size: 0.9em;
+    }
 }

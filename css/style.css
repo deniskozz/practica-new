@@ -53,6 +53,10 @@ h5 {
     height: 100%;
 }
 
+.card-body{
+    padding: 1rem 0;
+}
+
 .ship-name {
     text-transform: uppercase;
 }
@@ -114,9 +118,10 @@ footer {
 
 .price{
     font-family: 'Montserrat', serif;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 500;
     margin: 0;
+    text-align: center;
 }
 
 li.text{
@@ -127,8 +132,12 @@ li.text{
     font-size: 1.1em;
 }
 
-.similar-products p{
+.similar-products > p{
     font-size: 1.3em;
+    text-align: center;
+}
+
+.card-text{
     text-align: center;
 }
 
@@ -159,4 +168,43 @@ p.name{
 
 .quantity{
     margin: 0;
+}
+
+.row-mobile{
+    display: none;
+    padding-right: 0;
+}
+
+@media (max-width: 767px) {
+    .carousel-control, 
+    .carousel-indicators {
+        display: none;
+    }
+    #main-page_carousel{
+        display: none;
+    }
+    .row-mobile{
+        display: flex;
+
+    }
+
+    .card-title{
+        font-size: 0.8em;
+    }
+
+    .map-img{
+        margin-top: 2em;
+    }
+
+    .card-text{
+        font-size: 0.8em;
+    }
+
+    .price{
+        font-size: 0.8em;
+    }
+
+    .catalog-card-title {
+        font-size: 0.8em;
+    }
 }
