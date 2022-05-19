@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg bg-light">
+    <nav class="navbar navbar-light navbar-expand-lg bg-light sticky-top">
         <div class="container">
             <a href="/" class="navbar-brand">
                 <svg width="150" height="50" viewBox="0 0 150 50" fill="#fff" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +41,7 @@
                         <a class="nav-link" href="contact.html">Контакты</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#delivery">О доставке</a>
+                        <a class="nav-link" href="index.html#delivery">О доставке</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="cart.html">Корзина</a>
@@ -260,7 +260,7 @@
                 <div class="row h-75">
                     <div class="col mt-3">
                         <a href="#">
-                            <div class="card carousel-hits-card">
+                            <div class="card carousel-hits-card align-items-center">
                                 <img class="card-img-top img-fluid w-75" src="img/case1.jpg" alt="">
                                 <div class="card-body w-75">
                                     <h4 class="card-title">Силиконовый чехол «Акварель»</h4>
@@ -270,7 +270,7 @@
                     </div>
                     <div class="col mt-3">
                         <a href="#">
-                            <div class="card carousel-hits-card">
+                            <div class="card carousel-hits-card align-items-center">
                                 <img class="card-img-top img-fluid w-75" src="img/case2.jpg" alt="">
                                 <div class="card-body w-75">
                                     <h4 class="card-title">Силиконовый чехол «Пирамидка макарони 2»</h4>
@@ -280,7 +280,7 @@
                     </div>
                     <div class="col mt-3">
                         <a href="#">
-                            <div class="card carousel-hits-card">
+                            <div class="card carousel-hits-card align-items-center">
                                 <img class="card-img-top img-fluid w-75" src="img/case1.jpg" alt="">
                                 <div class="card-body w-75">
                                     <h4 class="card-title">Силиконовый чехол «Акварель»</h4>
@@ -290,7 +290,7 @@
                     </div>
                     <div class="col mt-3">
                         <a href="#">
-                            <div class="card carousel-hits-card">
+                            <div class="card carousel-hits-card align-items-center">
                                 <img class="card-img-top img-fluid w-75" src="img/case2.jpg" alt="">
                                 <div class="card-body w-75">
                                     <h4 class="card-title">Силиконовый чехол «Пирамидка макарони 2»</h4>
@@ -339,7 +339,7 @@
             <p class="photo-block-text photo-block-text-margin text-center">КАК В РЕАЛЬНОСТИ ВЫГЛЯДИТ НАША ПРОДУКЦИЯ</p>
             <p class="photo-block-text text-center">БОЛЬШЕ ФОТО В НАШЕМ VK
                 <a href="">
-                    <span style="color: #4C57FF;">MAKECASE_RU</span>
+                    <span style="color: #FF4C4C;">MAKECASE_RU</span>
                 </a>
             </p>
 
@@ -354,6 +354,11 @@
                 <img src="img/otziv.png" alt="" class="gallery-item col-6 mt-3">
             </div>
         </div>
+        <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+            </svg>
+        </button>
     </main>
     <footer>
         <div class="container py-4 mt-5">
@@ -381,7 +386,7 @@
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M3.37413 3.37413C0 6.74826 0 12.1788 0 23.04V24.96C0 35.8212 0 41.2517 3.37413 44.6259C6.74826 48 12.1788 48 23.04 48H24.96C35.8212 48 41.2517 48 44.6259 44.6259C48 41.2517 48 35.8212 48 24.96V23.04C48 12.1788 48 6.74826 44.6259 3.37413C41.2517 0 35.8212 0 24.96 0H23.04C12.1788 0 6.74826 0 3.37413 3.37413ZM8.10012 14.6001C8.36012 27.0801 14.6001 34.5801 25.5401 34.5801H26.1602V27.4401C30.1802 27.8401 33.22 30.7801 34.44 34.5801H40.1201C38.5601 28.9001 34.4599 25.7601 31.8999 24.5601C34.4599 23.0801 38.0599 19.4801 38.9199 14.6001H33.7598C32.6398 18.5601 29.3202 22.1601 26.1602 22.5001V14.6001H21V28.4401C17.8 27.6401 13.7601 23.7601 13.5801 14.6001H8.10012Z"
-                                    fill="#4C57FF" />
+                                    fill="#fff" />
                             </svg>
                         </a>
                         <p class="text-white mt-3 mb-0">Наш телефон</p>
@@ -393,6 +398,7 @@
     </footer>
 
     <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/top-btn.js"></script>
 </body>
 
 </html>
