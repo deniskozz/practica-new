@@ -208,3 +208,7 @@ p.name{
         font-size: 0.8em;
     }
 }
+
+html{
+    overflow-x: hidden;
+}
