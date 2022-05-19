@@ -46,7 +46,37 @@
                 <form class="d-flex my-2 my-lg-0 h-50 ">
                     <input class="form-control me-sm-2" type="text" placeholder="Поиск">
                 </form>
-                <button type="button" class="btn btn-primary">Позвоните мне</button>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modelId">
+                  Написать нам
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Помощь</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <p>Напишите нам свой вопрос и мы ответим вам</p>
+									<label for="modal-form_name" class="form-label mt-3">Введите ваше имя</label>
+									<input type="text" name="modal-name" id="modal-form_name" class="form-control" placeholder="Иван">
+									<label for="modal-form_email" class="form-label mt-3">Введите ваш email</label>
+									<input type="text" name="modal-email" id="modal-form_email" class="form-control" placeholder="example@yandex.ru">
+									<label for="message-text" class="col-form-label mt-3">Опишите свой вопрос</label>
+									<textarea class="form-control" id="message-text" style="max-height: 200px;"></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
